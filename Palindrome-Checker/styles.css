@@ -1,0 +1,51 @@
+body {
+    background-color: #000c31;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: .25fr 1fr .25fr;
+    font-family: Helvetica;
+  }
+  
+  .palindrome-checker {
+    grid-row: 2;
+  }
+  
+  .palindrome-box {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    color: black;
+    width: 50%;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+  }
+  
+  #text-input {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    width: 75%;
+  }
+  
+  #text-input:hover {
+    background-color: lightblue;
+  }
+  
+  #check-btn {
+    border: 2px dotted black;
+    border-radius: 15px;
+    background-color: skyblue;
+    padding: 5px 15px;
+    margin-top: 5px;
+  }
+  
+  #check-btn:hover {
+    border: 2px solid black;
+  }
+  
+  .hint {
+    background-color: rgb(14, 92, 14);
+    color: white;
+  }
