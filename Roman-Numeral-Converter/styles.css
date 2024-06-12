@@ -1,0 +1,51 @@
+body {
+    background-color: #131E3A;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .heading {
+    margin-top: 25vh;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .box {
+    border: 2px solid white;
+    width: 33vw;
+    margin-left: 33vw;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    font-size: 30px;
+    background-color: #3b3b4f;
+  }
+  
+  #number {
+    padding: 15px;
+    width: 80%;
+    background-color: #0D1427;
+    color: white;
+    font-size: 20px;
+  }
+  
+  #convert-btn {
+    color: black;
+    background-color: #FFCC00;
+    padding: 15px;
+    width: 80%;
+    margin-top: 15px;
+    border: 2px solid #D79232;
+    font-size: 25px;
+  }
+  
+  #output {
+    border: 2px solid white;
+    width: 33vw;
+    margin-left: 33vw;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #3b3b4f;
+  }
