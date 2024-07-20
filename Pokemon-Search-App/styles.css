@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    font-size: 20px;
+    background-color: #5D576B;
+    color: #F6F7F8;
+  }
+  
+  #search-button {
+    background-color: #8884FF;
+    border-radius: 8px;
+    color: #F6F7F8;
+  }
+  
+  td {
+    background-color: #8884FF;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  table {
+    margin: auto;
+    width: 50%;
+  }
+  
+  .type {
+    border: 2px solid #8884FF;
+    padding: 5px;
+    margin: 5px;
+  }
