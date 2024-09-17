@@ -1,0 +1,6 @@
+title: Syniah Peterson's HTML, CSS, and JavaScript Projects
+#logo
+description: HTML, CSS, and JavaScript Projects developed by Syniah Peterson
+remote_theme: pages-themes/slate@v0.2.0
+plugins:
+- jekyll-remote-theme
