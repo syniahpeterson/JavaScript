@@ -36,6 +36,10 @@ body {
   background-color: transparent;
 }
 
+#container #text-input:focus {
+  outline: none;
+}
+
 #container #check-btn {
   padding: 0.25rem;
   width: 40%;
