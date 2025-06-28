@@ -57,6 +57,19 @@ body {
   outline: 0;
 }
 
+#main-box #convert-btn {
+  padding: 0.25rem;
+  border-radius: 8px;
+  width: 20%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#main-box #convert-btn:hover {
+  border: 2px solid black;
+}
+
 #output {
   display: flex;
   align-items: center;
