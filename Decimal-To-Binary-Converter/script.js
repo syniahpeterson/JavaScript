@@ -5,7 +5,6 @@ const animationContainer = document.getElementById("animation-container");
 const animationData = [
   {
     inputVal: 5,
-    marginTop: 300,
     addElDelay: 1000,
     msg: 'decimalToBinary(5) returns "10" + 1 (5 % 2). Then it pops off the stack.',
     showMsgDelay: 15000,
@@ -13,7 +12,6 @@ const animationData = [
   },
   {
     inputVal: 2,
-    marginTop: -200,
     addElDelay: 1500,
     msg: 'decimalToBinary(2) returns "1" + 0 (2 % 2) and gives that value to the stack below. Then it pops off the stack.',
     showMsgDelay: 10000,
@@ -21,12 +19,11 @@ const animationData = [
   },
   {
     inputVal: 1,
-    marginTop: -200,
     addElDelay: 2000,
-    msg: 'decimalToBinary(1) returns "1" (base case) and gives that value to the stack below. Then it pops off the stack.',
+    msg: "decimalToBinary(1) returns '1' (base case) and gives that value to the stack below. Then it pops off the stack.",
     showMsgDelay: 5000,
     removeElDelay: 10000,
-  }
+  },
 ];
 
 const decimalToBinary = (input) => {
@@ -43,7 +40,7 @@ const showAnimation = () => {
   animationData.forEach((obj) => {
     setTimeout(() => {
       animationContainer.innerHTML += `
-        <p id="${obj.inputVal}" style="margin-top: ${obj.marginTop}px;" class="animation-frame">
+        <p id="${obj.inputVal}" class="animation-frame">
           decimalToBinary(${obj.inputVal})
         </p>
       `;
@@ -59,7 +56,7 @@ const showAnimation = () => {
   });
 
   setTimeout(() => {
-result.textContent = decimalToBinary(5);
+    result.textContent = decimalToBinary(5);
   }, 20000);
 };
 

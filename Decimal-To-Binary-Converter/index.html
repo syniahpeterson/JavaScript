@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Decimal to Binary Converter</h1>
-    <div class="input-container">
+    <h1>
+      Decimal to Binary <br />
+      Converter
+    </h1>
+    <section class="input-container">
       <label for="number-input">Enter a decimal number:</label>
       <input
         value=""
@@ -19,9 +22,12 @@
         class="number-input"
       />
       <button class="convert-btn" id="convert-btn">Convert</button>
-    </div>
-    <output id="result" for="number-input"></output>
-    <div id="animation-container"></div>
+    </section>
+    <section class="output-container">
+      <output id="result" for="number-input"></output>
+      <h2>Call stack</h2>
+      <div id="animation-container"></div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
