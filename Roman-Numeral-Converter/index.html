@@ -3,22 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Roman Numeral Converter</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="heading">
-      <h1>ROMAN<br>NUMERAL<br>CONVERTER</h1>
-    </div>
-    <div class="box">
-      <p>Enter a Number:</p>
-      <input id="number" type="number"></input>
-      <br>
+    <div id="main-box" class="box">
+      <h1>Roman Numeral Converter</h1>
+      <h2>Enter a Number:</h2>
+      <input id="number" type="number" />
       <button id="convert-btn">Convert</button>
     </div>
-    <div id="output">
-      <p></p>
-    </div>
+    <div id="output" class="hidden"></div>
     <script src="script.js"></script>
   </body>
 </html>

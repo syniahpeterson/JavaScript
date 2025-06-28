@@ -1,85 +1,86 @@
-const btn = document.getElementById('convert-btn');
-const userNumber = document.getElementById('number');
-const output = document.getElementById('output');
+const input = document.getElementById("number");
+const convertBtn = document.getElementById("convert-btn");
+const output = document.getElementById("output");
 
-function romanConverter(number) {
-  if (number === '') {
-    output.innerHTML = 'Please enter a valid number';
-    return;
+convertBtn.addEventListener("click", () => {
+  inputValidation(input.value);
+  outputDisplay();
+});
+
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    inputValidation(input.value);
+    outputDisplay();
   }
-  else if (number <= 0) {
-    output.innerHTML = 'Please enter a number greater than or equal to 1';
+});
+
+const inputValidation = (number) => {
+  if (number === "") {
+    output.textContent = "Please enter a valid number";
+    reset();
+  } else if (number < 1) {
+    output.textContent = "Please enter a number greater than or equal to 1";
+    reset();
+  } else if (number > 3999) {
+    output.textContent = "Please enter a number less than or equal to 3999";
+    reset();
+  } else {
+    convertToRoman(input.value);
+    reset();
   }
-  else if (number > 3999) {
-    output.innerHTML = 'Please enter a number less than or equal to 3999';
-  }
-  else {
-    output.innerHTML = '';
-    while (number > 0) {
-      if (number >= 1000) {
-        output.innerHTML += 'M';
-        number -= 1000;
-      }
-      else if (number >= 900) {
-        output.innerHTML += 'CM';
-        number -= 900;
-      }
-      else if (number >= 500) {
-        output.innerHTML += 'D';
-        number -= 500;
-      }
-      else if (number >= 400) {
-        output.innerHTML += 'CD';
-        number -= 400;
-      }
-      else if (number >= 100) {
-        output.innerHTML += 'C';
-        number -= 100;
-      }
-      else if (number >= 90) {
-        output.innerHTML += 'XC';
-        number -= 90;
-      }
-      else if (number >= 50) {
-        output.innerHTML += 'L';
-        number -= 50;
-      }
-      else if (number >= 40) {
-        output.innerHTML += 'XL';
-        number -= 40;
-      }
-      else if (number >= 10) {
-        output.innerHTML += 'X';
-        number -= 10;
-      }
-      else if (number >= 9) {
-        output.innerHTML += 'IX';
-        number -= 9;
-      }
-      else if (number >= 5) {
-        output.innerHTML += 'V';
-        number -= 5;
-      }
-      else if (number >= 4) {
-        output.innerHTML += 'IV';
-        number -= 4;
-      }
-      else {
-        output.innerHTML += 'I';
-        number -= 1;
-      }
+};
+
+const convertToRoman = (number) => {
+  output.textContent = "";
+  while (number > 0) {
+    if (number >= 1000) {
+      output.textContent += "M";
+      number -= 1000;
+    } else if (number >= 900) {
+      output.textContent += "CM";
+      number -= 900;
+    } else if (number >= 500) {
+      output.textContent += "D";
+      number -= 500;
+    } else if (number >= 400) {
+      output.textContent += "CD";
+      number -= 400;
+    } else if (number >= 100) {
+      output.textContent += "C";
+      number -= 100;
+    } else if (number >= 90) {
+      output.textContent += "XC";
+      number -= 90;
+    } else if (number >= 50) {
+      output.textContent += "L";
+      number -= 50;
+    } else if (number >= 40) {
+      output.textContent += "XL";
+      number -= 40;
+    } else if (number >= 10) {
+      output.textContent += "X";
+      number -= 10;
+    } else if (number >= 9) {
+      output.textContent += "IX";
+      number -= 9;
+    } else if (number >= 5) {
+      output.textContent += "V";
+      number -= 5;
+    } else if (number >= 4) {
+      output.textContent += "IV";
+      number -= 4;
+    } else {
+      output.textContent += "I";
+      number -= 1;
     }
   }
 };
 
-btn.addEventListener('click', () => {
-  romanConverter(userNumber.value);
-  userNumber.value = '';
-});
+const reset = () => {
+  input.value = "";
+};
 
-userNumber.addEventListener('keydown', e => {
-  if (e.key === 'Enter') {
-    romanConverter(userNumber.value);
-    userNumber.value = '';
-  }
-});
+const outputDisplay = () => {
+  output.classList.remove("hidden");
+  output.classList.add("box");
+};
