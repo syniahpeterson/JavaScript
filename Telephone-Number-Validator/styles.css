@@ -63,7 +63,7 @@ body {
   display: block;
 }
 
-#container #check-btn,
+#check-btn,
 #clear-btn {
   padding: 0.5rem;
   margin: 1rem;
@@ -71,4 +71,37 @@ body {
   border-radius: 12px;
   font-size: 1rem;
   background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+}
+
+#check-btn:hover,
+#clear-btn:hover {
+  border: 2px solid #ffffff;
+  animation: wiggle 0.6s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  45% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
 }
