@@ -2,55 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokémon Search App</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <p>Search for Pokémon Name or ID:</p>
-    <form id="search">
-      <input id="search-input" required>
-      <button id="search-button">Search</button>
-    </form>
-    <div id="result">
-      <h4 id="pokemon-name"></h4>
-      <h4 id="pokemon-id"></h4>
-      <p id="weight"></p>
-      <p id="height"></p>
-      <div id="sprite-container"></div>
-      <h6 id="types"></h6>
-      <table>
-        <tr>
-          <td>Base</td>
-          <td>Stats</td>
-        </tr>
-        <tr>
-          <td>HP:</td>
-          <td id="hp"></td>
-        </tr>
-        <tr>
-          <td>Attack:</td>
-          <td id="attack"></td>
-        </tr>
-        <tr>
-          <td>Defense:</td>
-          <td id="defense"></td>
-        </tr>
-        <tr>
-            <td>Sp. Attack:</td>
-            <td id="special-attack"></td>
-        </tr>
-        <tr>
-            <td>Sp. Defense:</td>
-            <td id="special-defense"></td>
-        </tr>
-        <tr>
-          <td>Speed:</td>
-          <td id="speed"></td>
-        </tr>
-      </table>
-    </div>
-    <script src="./script.js"></script>
+    <main id="container">
+      <h1 id="title">Pokémon Search App</h1>
+      <p id="sub-title">Search for Pokémon Name or ID:</p>
+      <form id="search">
+        <input type="text" id="search-input" required />
+        <button id="search-button">Seach</button>
+      </form>
+      <div id="info">
+        <h3 id="creature-name"></h3>
+        <h3 id="creature-id"></h3>
+        <h3 id="weight"></h3>
+        <h3 id="height"></h3>
+        <div id="creature-img"></div>
+        <h3 id="types"></h3>
+      </div>
+      <div id="table-info">
+        <table>
+          <tr>
+            <th class="table-heading">Base</th>
+            <th class="table-heading">Stats</th>
+          </tr>
+          <tr>
+            <td class="info-heading">HP:</td>
+            <td id="hp" class="info-data"></td>
+          </tr>
+          <tr>
+            <td class="info-heading">Attack:</td>
+            <td id="attack" class="info-data"></td>
+          </tr>
+          <tr>
+            <td class="info-heading">Defense:</td>
+            <td id="defense" class="info-data"></td>
+          </tr>
+          <tr>
+            <td class="info-heading">Sp. Attack:</td>
+            <td id="special-attack" class="info-data"></td>
+          </tr>
+          <tr>
+            <td class="info-heading">Sp. Defense:</td>
+            <td id="special-defense" class="info-data"></td>
+          </tr>
+          <tr>
+            <td class="info-heading">Speed:</td>
+            <td id="speed" class="info-data"></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
