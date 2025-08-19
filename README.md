@@ -27,4 +27,4 @@
 
 
   
-[JavaScript Algorithms and Data Structures (Beta) Certification](https://www.freecodecamp.org/certification/SyniahPeterson/javascript-algorithms-and-data-structures-v8)   
+[JavaScript Algorithms and Data Structures Certification](https://www.freecodecamp.org/certification/syniahpeterson/javascript-algorithms-and-data-structures-v8)   
